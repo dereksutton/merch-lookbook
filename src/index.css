@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .perspective-1500 {
+    perspective: 1500px;
+  }
+}
+
+/* Make the app take up the full viewport height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add more debugging for image issues */
+.debug-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+  font-size: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid red;
+  color: red;
+  z-index: 100;
+}
+
+/* Make sure the flipbook container centers properly */
+.stf__parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
